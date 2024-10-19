@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    background: linear-gradient(to right, #7e5ff1, #74c5e6);
+    text-align: center;
+    color: white;
+    border-radius: 65px;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+header:hover{
+    background: linear-gradient(to right, #3602f3, #8081bd);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 13px 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 100px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: blackgroud 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #f4f4f4;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.banner {
+    background-image: url('https://www.presalud.com.co/wp-content/uploads/2018/05/banner-viajes-europa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;    
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenido-banner {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.banner .btn {
+    background-color: #1100ff;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #c0392b;
+}
+
+.boton {
+    padding-top: 50px;
+}
+
+.destinos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinos h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.destino {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.destino:hover {
+    transform: translateY(-10px);
+}
+
+.destino img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #3498db;
+}
+
+.destino h3 {
+    margin: 15px;
+    color: #3498db;
+    font-size: 1.5em;
+}
+
+.destino p {
+    margin: 0 15px 15px 15px;
+    color: #555;
+}
+
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #3498db;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto form input, .contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contacto form input:focus, .contacto form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.contacto form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto form button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .banner h2 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .destino {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .destinos h2 {
+        font-size: 2em;
+    }
+
+    .destino h3 {
+        font-size: 1.2em;
+    }
+    .contacto {
+        padding: 20px 10px;
+    }
+
+    .contacto h2 {
+        font-size: 1.5em;
+    }
+
+    .contacto form input, .contacto form textarea {
+        width: 100%;
+    }
+}
